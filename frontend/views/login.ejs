@@ -21,6 +21,7 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="../../images/favicon.png" />
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -94,14 +95,23 @@
         password: password
     }).then(res=>{
       console.log(res)
-    if(res.data[0].message == "invalid")
+    if(res.data[0].message == "invalid password")
     {
       Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Invalid username or password',
+      text: 'Invalid password',
     })
-    }else{
+    }else if(res.data[0].message == "invalid username"){
+      Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Invalid username',
+    })
+
+    }
+    
+    else{
       console.log(res.data[0].message)
       localStorage.setItem("token",res.data[0].message)
       window.location = '/dashboard'

@@ -350,15 +350,18 @@ const transfer = async (req, res) => {
               }
             }
           } else {
+            console.log("insufficient balance")
             res.status(200).json([{ message: "insufficient balance" }]);
           }
-        } else {
-          console.log("error");
-        }
-      } else {
-        res.status(200).json([{ message: "Account do not exist" }]);
+        } 
+      //} else {
+        //res.status(200).json([{ message: "Account do not exist" }]);
+      } else{
+        console.log("account does not exist");
+          res.status(200).json([{ message: "Account do not exist" }]);
       }
     } else {
+      console.log("password is incorrect")
       res.status(200).json([{ message: "incorrect password" }]);
     }
   }

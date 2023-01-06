@@ -649,14 +649,6 @@ function withdrawal(){
       title: 'Oops...',
       text: 'Incorrect Password'
     })
-
-    } else if(rs.data[0].message = "Account do not exist"){
-      Swal.fire({
-      icon: 'error',
-      title: 'Oops...',
-      text: 'Account does not exist'
-    })
-      
     } else if (rs.data[0].message == "insufficient balance") {
 
       Swal.fire({
@@ -664,6 +656,12 @@ function withdrawal(){
       title: 'Oops...',
       text: 'Insufficient balance'
     }) 
+  } else if(rs.data[0].message == "Account do not exist"){
+      Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Account does not exist'
+    })
     } else{
       Swal.fire({
       icon: 'success',
