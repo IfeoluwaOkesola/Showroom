@@ -18,26 +18,44 @@ Features like chatroom between users will be added in future.
 ## Installation
 
 1. Make a pull request
-2. Create database savings on your mysql workbench
+2. Create database on your mysql workbench
 3. Change directory to backend
    ```
    cd backend
-4. Run the dbmanager.js file on your terminal to create the database tables.
+4. Run
+
+   ```
+   npm install
+5. Create a .env file. Add the following to it
+
+   ```
+   DATABASE_USER='your database user name'
+   DATABASE_PASSWORD='password of your database'
+   DATABASE='name of your database created'   
+6. Run the dbmanager.js file on your terminal to create the database tables.
    
    ```
    node dbmanager.js
-5. Run the index.js file on your terminal to be able to test functions on your localhost
+7. Run the index.js file on your terminal to be able to test functions on your localhost
    
    ```
    node index.js
+8. Open a different terminal
 
-6. Go to your browser to use localhost
+9.  cd into frontend
+10. Run npm install to install node modules
+    ```
+    npm install
+11. Run index.js
+    ```
+    node index.js
+12. Go to your browser to use localhost
    ```
    http://localhost:4000
 
-7. You will be able to create account and log in at the point.
+13. You will be able to create account and log in at the point.
 
-8. To test the withrawal and transfer function, directly insert into the transactions table from your mysql database
+14. To test the withdrawal and transfer function, directly insert into the transactions table from your mysql database
 
 
 ## Demo Video
