@@ -53,6 +53,8 @@ Features like chatroom between users will be added in future.
    ```
    http://localhost:4000
 
+   ```
+
 13. You will be able to create account and log in at the point.
 
 14. To test the withdrawal and transfer function, directly insert into the transactions table from your mysql database
@@ -60,6 +62,7 @@ Features like chatroom between users will be added in future.
 
 ## Demo Video
 
-This link [Demo Video 1](https://vimeo.com/787026466/feaf6a7e13) takes you to a demo of the functions.
+ [demoVideo1](https://vimeo.com/787021257/238a8b7831) is a demo video of the various functions.
 
-This link [Demo Video 2](https://vimeo.com/787026466/feaf6a7e13) takes you to a demo of eventualities accounted for
+[demoVideo2](https://vimeo.com/787026466/feaf6a7e13) is a demo video of the exceptionalities accounted for
+
